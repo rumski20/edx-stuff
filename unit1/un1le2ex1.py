@@ -18,10 +18,10 @@ def powerSet(items):
         print('combo: ', combo)
         yield combo
 
-
+test_list = items.buildRandomItems(3)
 # test_list = [1,2,3,4]
-# print('power set - one bag', test_list)
-# print(len([i for i in powerSet(test_list)]), 'combinations')
+print('power set - one bag', test_list)
+print(len([i for i in powerSet(test_list)]), 'combinations')
 
 # jiPiBi's power set method
 def powerSet2(items):
@@ -93,8 +93,8 @@ def yieldAllCombos(items):
             # print(runninglist, (bag1,bag2))
 
 
-print('power set - two bag')
-# test_list = items.buildRandomItems(3)
-test_list = items.buildItems()
-[print(i) for i in test_list]
-print(len([i for i in yieldAllCombos(test_list)]), 'combinations')
+# print('power set - two bag')
+# # test_list = items.buildRandomItems(3)
+# test_list = items.buildItems()
+# [print(i) for i in test_list]
+# print(len([i for i in yieldAllCombos(test_list)]), 'combinations')
